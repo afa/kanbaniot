@@ -1,0 +1,7 @@
+ru:
+        issue_fields: 
+                status: "Статус:"
+                start_date: "Дата пл.нач.:"
+                due_date: "Дата пл.окон.:"
+                spent_hours: "Продолжительность в д.стат.:"
+                real_start: "Дата факт.нач.:"
