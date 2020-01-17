@@ -1,0 +1,12 @@
+/* = require_self */
+
+#issue_fields {
+  margin: 0;
+}
+
+#issue_fields li {
+  margin: 0;
+  list-style-type: none;
+  font-size: 10px;
+  color: #42321a;
+}

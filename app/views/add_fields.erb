@@ -1,0 +1,17 @@
+<script id="fields_template" type="text/template">
+  <ul id="issue_fields">	
+    <li><%= t 'issue_fields.status' %> {{status}}</li>
+    <li><%= t 'issue_fields.start_date' %> {{start_date}}</li>
+    <li><%= t 'issue_fields.due_date' %> {{due_date}}</li>
+    {{#real_start}}
+      <li><%=t 'issue_fields.real_start' %>{{real_start}}</li>
+    {{/real_start}}
+    {{^real_start}}{{/real_start}}
+    <li><%= t 'issue_fields.spent_hours' %> {{spent_hours}}</li>
+  </div>
+</script>
+
+<% content_for :header_tags do %>
+  <%= javascript_include_tag :add_fields, :plugin => :kaniot %>
+  <%= stylesheet_link_tag :style, :plugin => :kaniot %>
+<% end %>

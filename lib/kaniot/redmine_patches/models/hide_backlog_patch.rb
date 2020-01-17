@@ -12,6 +12,10 @@ module Kaniot
 
 	super
       end
+
+      def entity_json(entity)
+	super.merge(real_start: GetIssueRealStart.new(entity).call&.to_date&.to_s(:db))
+      end
     end
   end
 end
